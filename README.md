@@ -13,20 +13,26 @@ A dot graphics editor which runs on a terminal emulator.
 # Key Assign
 
 - cursor move
-    h : left
-    j : down
-    k : up
-    l : right
-    a : left end
-    e : right end
+```
+h : left
+j : down
+k : up
+l : right
+a : left end
+e : right end
+```
 
 - dot edit
-    0 : clear
-    1 - 8 : turn on/off a dot on cursor
-    9 : turn on all dots on cursor
+```
+0 : clear
+1 - 8 : turn on/off a dot on cursor
+9 : turn on all dots on cursor
+```
 
 - other
-    q : quit
+```
+q : quit
+```
 
 # implemented features
 
