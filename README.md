@@ -29,6 +29,12 @@ e : right end
 9 : turn on all dots on cursor
 ```
 
+- copy, paste
+```
+y : copy
+p : paste
+```
+
 - other
 ```
 q : quit
@@ -38,10 +44,10 @@ q : quit
 
 - cursor move
 - dot edit
+- copy / paste
 
 # not implemented features
 
-- copy / paste (y, p)
 - save / restore (s, pass by command line)
 - undo / redo (u, r)
 

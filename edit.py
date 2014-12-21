@@ -5,10 +5,9 @@ import curses
 
 def update(app, n):
   y, x = app.win.getyx()
-  app.data.update(x, y, n)
-  c = app.data.get(x, y)
+  app.data.update_dot(x, y, n)
+  c = app.data.get_char(x, y)
   app.win.addstr(y, x, c)
-  # app.win.move(y, x)
 
 def zero(app):
   update(app, 0)
