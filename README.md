@@ -10,7 +10,7 @@ A dot graphics editor which runs on a terminal emulator.
 - [0-9] to edit dots
 - q to quit
 
-# Key Assign
+# Key Assigns
 
 - cursor move
 ```
@@ -40,14 +40,15 @@ p : paste
 q : quit
 ```
 
-# implemented features
+# Implemented features
 
 - cursor move
 - dot edit
 - copy / paste
 
-# not implemented features
+# Not implemented features
 
 - save / restore (s, pass by command line)
 - undo / redo (u, r)
+- regional select, copy, cut, paste (v, y, x, p)
 
