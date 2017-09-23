@@ -15,9 +15,16 @@ import copy
 class App():
   def __init__(self):
     self.win = curses.initscr()
-    curses.curs_set(1)  # doesn't work on some environment
+    self.setup_window()
     h, w = self.win.getmaxyx()
     self.data = model.Model(w, h)
+
+  def setup_window(self):
+    curses.curs_set(False)
+    curses.start_color()
+    curses.use_default_colors()
+    curses.init_pair(1, -1, -1)
+    self.win.bkgd(' ', curses.color_pair(1))
   
   # event loop
   def loop(self):

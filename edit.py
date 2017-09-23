@@ -8,6 +8,7 @@ def update(app, n):
   app.data.update_dot(x, y, n)
   c = app.data.get_char(x, y)
   app.win.addstr(y, x, c)
+  app.win.move(y, x)
 
 def zero(app):
   update(app, 0)
@@ -22,16 +23,16 @@ def three(app):
   update(app, 3)
 
 def four(app):
-  update(app, 4)
+  update(app, 7)
 
 def five(app):
-  update(app, 5)
+  update(app, 4)
 
 def six(app):
-  update(app, 6)
+  update(app, 5)
 
 def seven(app):
-  update(app, 7)
+  update(app, 6)
 
 def eight(app):
   update(app, 8)
