@@ -40,10 +40,10 @@ class Model():
     self.update_cell_num(x, y, result)
   
   def char_to_num(self, c):
-    return ord(unicode(c,'utf-8')) - self.dot_base
+    return ord(c) - self.dot_base
   
   def num_to_char(self, n):
-    return unichr(self.dot_base + n).encode('utf-8')
+    return chr(self.dot_base + n)
   
   def get_num(self, x, y):
     return self.data[y][x]
@@ -75,7 +75,7 @@ class Model():
 if __name__ == '__main__':
   model = Model(80, 24)
   ch = model.num_to_char(model.dot_full)
-  print ch
+  print(ch)
   num = model.char_to_num(ch)
-  print num
+  print(num)
 

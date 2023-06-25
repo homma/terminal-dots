@@ -15,4 +15,4 @@ def paste(app):
   if clip:
     app.data.update_cell_char(x, y, clip)
   app.win.addstr(y, x, clip)
-
+  app.win.move(y, x)
